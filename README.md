@@ -27,11 +27,11 @@ We use a popular Nuget package, Newtonsoft, to serialize data into a string that
 
 Thread safe queues are used to handle the messages. This sample can be used as a base for a high-performance data pipes between Milestone applications/services.
 
-Messages that can be send must implement our abstract PluginMessage class.
+Messages that can be send must implement our abstract PluginMessage class:
 
 ![image](https://user-images.githubusercontent.com/65533203/161710341-6459c50c-b28f-4f5c-a7db-2408a89e059b.png)
 
-Each new message must be explicitly coded into the Deserialize method of the abstract class.
+Each new message must be explicitly coded into the Deserialize method of the abstract class:
 
 ![image](https://user-images.githubusercontent.com/65533203/161710022-357871a6-a2df-4c44-8d5d-fea9ed73002e.png)
 
